@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{48275233-D191-46F4-9687-ADE6F31354E9}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qmkl:parallel" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" SourceFileFormat="fileFormatFixed" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|Win32" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qmkl:parallel" SuppressStartupBanner="true" Parallelization="true" SourceFileFormat="fileFormatFixed" OpenMP="OpenMPParallelCode"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Debug|x64" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qmkl:parallel" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" SourceFileFormat="fileFormatFixed" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64" UseCompiler="ifortCompiler">
+			<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qmkl:parallel" SuppressStartupBanner="true" Parallelization="true" SourceFileFormat="fileFormatFixed" OpenMP="OpenMPParallelCode"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+			<Filter Name="Aerodynamic Matrix">
+				<File RelativePath=".\AIMATRIX.F90"/>
+				<File RelativePath=".\DIMoAIM.F90"/>
+				<File RelativePath=".\MATRIXOFBB.F90"/>
+			</Filter>
+			<Filter Name="Aerodynamic Routines">
+				<File RelativePath=".\AEROLOADS.F90"/>
+				<File RelativePath=".\AEROMESH_UPDATE.f90"/>
+				<File RelativePath=".\BODYINFLUENCE.F90"/>
+				<File RelativePath=".\CONTROLPOINTS.F90"/>
+				<File RelativePath=".\CONVECT.F90"/>
+				<File RelativePath=".\RHSVECTOR.F90"/>
+				<File RelativePath=".\VORTEX2D.F90"/>
+				<File RelativePath=".\VORTEXPOINTS.F90"/>
+				<File RelativePath=".\WAKEINFLUENCE.F90"/>
+			</Filter>
+			<Filter Name="General Routines">
+				<File RelativePath=".\AERODYNMAICDATA.F90"/>
+				<File RelativePath=".\ELASTICDATA.F90"/>
+				<File RelativePath=".\MYGENERALDATA.F90"/>
+				<File RelativePath=".\OPENINPUTFILES.F90"/>
+			</Filter>
+			<Filter Name="Inter-model connection Routines">
+				<File RelativePath=".\AL2SL.F90"/>
+			</Filter>
+			<Filter Name="Main Program">
+				<File RelativePath=".\UVLM2D_103.f90"/>
+			</Filter>
+			<Filter Name="Modules">
+				<File RelativePath=".\AERODYNAMICMODULE.F90"/>
+				<File RelativePath=".\AUXVARIABLE.f90"/>
+				<File RelativePath=".\ELASTICMODULE.F90"/>
+				<File RelativePath=".\GENERALMODULE.F90"/>
+			</Filter>
+			<Filter Name="Numerical Integration Routines">
+				<File RelativePath=".\ab2spm.f90"/>
+				<File RelativePath=".\ab3spm.f90"/>
+				<File RelativePath=".\am2sm.f90"/>
+				<File RelativePath=".\am3sm.f90"/>
+				<File RelativePath=".\em.f90"/>
+				<File RelativePath=".\error.F90"/>
+				<File RelativePath=".\mem.f90"/>
+				<File RelativePath=".\MYODE.F90"/>
+				<File RelativePath=".\stepa.f90"/>
+				<File RelativePath=".\stepb.f90"/>
+				<File RelativePath=".\stepc.f90"/>
+				<File RelativePath=".\stepe.f90"/>
+				<File RelativePath=".\stepf.f90"/>
+			</Filter>
+			<Filter Name="Output File Routines">
+				<File RelativePath=".\OPENOUTPUTFILES.F90"/>
+				<File RelativePath=".\OUTPUT.F90"/>
+				<File RelativePath=".\TECOPDIV.f90"/>
+				<File RelativePath=".\WRITEDATA.F90"/>
+			</Filter>
+			<Filter Name="Structural Routines">
+				<File RelativePath=".\INTEGRATESTEP0.F90"/>
+				<File RelativePath=".\INTEGRATESTEP1.F90"/>
+				<File RelativePath=".\INTEGRATESTEP2.F90"/>
+				<File RelativePath=".\INTEGRATESTEP3.F90"/>
+				<File RelativePath=".\INTEGRATESTEPJ.F90"/>
+			</Filter>
+		</Filter>
+		<File RelativePath=".\ReadMe.txt"/>
+	</Files>
+	<Globals/>
+</VisualStudioProject>
